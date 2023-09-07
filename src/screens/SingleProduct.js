@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./../components/Header";
 import Rating from "../components/homeComponents/Rating";
 import { Link } from "react-router-dom";
@@ -7,6 +7,19 @@ import products from "../data/Products";
 
 const SingleProduct = ({ match }) => {
   const product = products.find((p) => p._id === match.params.id);
+
+  // Step 1: Set up state for the cart
+  const [CartScreen, setCart] = useState([]);
+
+  // Step 2: Define the function to add a product to the cart
+  const addToCart = (product) => {
+    // Create a copy of the current cart state
+    const updatedCart = [...CartScreen];
+    // Add the selected product to the copy
+    updatedCart.push(product);
+    // Update the cart state with the new copy
+    setCart(updatedCart);
+  };
   return (
     <>
       <Header />
@@ -56,7 +69,12 @@ const SingleProduct = ({ match }) => {
                         ))}
                       </select>
                     </div>
-                    <button className="round-black-btn">Add To Cart</button>
+                    <button
+            className="round-black-btn"
+            onClick={() => addToCart(product)}
+          >
+            Add To Cart
+          </button>
                   </>
                 ) : null}
               </div>

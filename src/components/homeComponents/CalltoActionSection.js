@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const CalltoActionSection = () => {
   return (
     <div className="subscribe-section bg-with-black">
@@ -7,16 +7,29 @@ const CalltoActionSection = () => {
         <div className="row">
           <div className="col-xs-12">
             <div className="subscribe-head">
-              <h2>DO you need more tips?</h2>
-              <p>Sign up free and get the latest tips.</p>
-              <form className="form-section">
-                <input placeholder="Your Email..." name="email" type="email" />
-                <input value="Yes. I want!" name="subscribe" type="submit" />
-              </form>
+              <h2>Get In Touch</h2>
+              <p>Follow us on our social media accounts.</p>
+              <div className="social-media">
+              <Link to="">
+                <i className="fab fa-facebook-f"></i>
+              </Link>
+              <Link to="">
+                <i className="fab fa-instagram"></i>
+              </Link>
+              <Link to="">
+                <i className="fab fa-linkedin-in"></i>
+              </Link>
+              <Link to="">
+                <i className="fab fa-youtube"></i>
+              </Link>
+              <Link to="">
+                <i className="fab fa-pinterest-p"></i>
+              </Link>
             </div>
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

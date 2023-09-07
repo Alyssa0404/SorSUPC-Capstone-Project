@@ -1,7 +1,8 @@
 import React from "react";
 import Header from "./../components/Header";
 import ShopSection from "./../components/homeComponents/ShopSection";
-import ContactInfo from "./../components/homeComponents/ContactInfo";
+import FeaturedProducts from "./../components/homeComponents/FeaturedProducts";
+// import ContactInfo from "./../components/homeComponents/ContactInfo";
 import CalltoActionSection from "./../components/homeComponents/CalltoActionSection";
 import Footer from "./../components/Footer";
 
@@ -11,8 +12,9 @@ const HomeScreen = () => {
     <div>
       <Header />
       <ShopSection />
+      <FeaturedProducts />
       <CalltoActionSection />
-      <ContactInfo />
+      {/* <ContactInfo /> */}
       <Footer />
     </div>
   );

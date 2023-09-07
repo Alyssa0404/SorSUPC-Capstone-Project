@@ -17,10 +17,10 @@ const ShippingScreen = () => {
           onSubmit={submitHandler}
         >
           <h6>DELIVERY ADDRESS</h6>
-          <input type="text" placeholder="Enter address" />
-          <input type="text" placeholder="Enter city" />
-          <input type="text" placeholder="Enter postal code" />
-          <input type="text" placeholder="Enter country" />
+          <input type="text" placeholder="Enter Street" />
+          <input type="text" placeholder="Enter Purok" />
+          <input type="text" placeholder="Enter Barangay " />
+          <input type="text" placeholder="Enter Municipality" />
           <button type="submit">
             <Link to="/payment" className="text-white">
               Continue
