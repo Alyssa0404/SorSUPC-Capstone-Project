@@ -2,6 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Header = () => {
+
+  const isAdmin = true;
+
   return (
     <div>
       {/* Top Header */}

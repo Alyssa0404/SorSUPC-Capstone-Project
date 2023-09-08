@@ -15,6 +15,7 @@ import PaymentScreen from "./screens/PaymentScreen";
 import PlaceOrderScreen from "./screens/PlaceOrderScreen";
 import OrderScreen from "./screens/OrderScreen";
 import NotFound from "./screens/NotFound";
+import AdminDashboard from "./screens/admin-dashboard/AdminDashboard";
 
 
 const App = () => {
@@ -28,6 +29,7 @@ const App = () => {
         <Route path="/register" component={Register} />
         <Route path="/profile" component={ProfileScreen} />
         <Route path="/cart/:id?" component={CartScreen} />
+        <Route path="/admin-dashboard" component={AdminDashboard} />
         <Route path="/shipping" component={ShippingScreen} />
         <Route path="/payment" component={PaymentScreen} />
         <Route path="/placeorder" component={PlaceOrderScreen} />
