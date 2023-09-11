@@ -5,6 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import HomeScreen from "./screens/HomeScreen";
 import ProductList from "./screens/ProductList";
+import AboutUs from "./screens/AboutUs";
 import SingleProduct from "./screens/SingleProduct";
 import Login from "./screens/Login";
 import Register from "./screens/Register";
@@ -24,6 +25,7 @@ const App = () => {
       <Switch>
         <Route path="/" component={HomeScreen} exact />
         <Route path="/list" component={ProductList} />
+        <Route path="/about" component={AboutUs} />
         <Route path="/products/:id" component={SingleProduct} />
         <Route path="/login" component={Login} />
         <Route path="/register" component={Register} />

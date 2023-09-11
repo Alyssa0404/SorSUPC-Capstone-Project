@@ -33,8 +33,10 @@ const FeaturedProducts = () => {
             
           ))}
            <div className="action-buttonss">
-           <Link to={'/list'}>See more
-              </Link>
+
+            <Link to={'/list'} className="text-white"> 
+              See more
+            </Link>
            </div>
         </div>
       </div>

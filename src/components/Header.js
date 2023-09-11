@@ -13,7 +13,7 @@ const Header = () => {
           <div className="row">
           <div class="col-md-6 d-flex align-items-center display-nonenumber">
             <p>+255 768 356 890</p>
-           <p className = "center">Let's Support Student Entrepreneurs!</p>
+            <p className = "center">Let's Support Student Entrepreneurs!</p>
         </div>
 
             <div className=" col-12 col-lg-6 justify-content-center justify-content-lg-end d-flex align-items-center">
@@ -129,7 +129,40 @@ const Header = () => {
                   <span className="badge">1</span>
                 </Link>
               </div>
-                <div className="col-md-3 d-flex align-items-center justify-content-end Login-Register">
+              <div className="col-md-3 d-flex align-items-center justify-content-end Login-Register">
+                  <div className ="right-position">
+                <div className="btn-group">
+                  <button
+                    type="button"
+                    className="name-button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  
+                  >
+                    <i className="fas fa-user"></i>  Alyssa Balaoro
+                  </button>
+                  <div className="dropdown-menu">
+                    <Link className="dropdown-item" to="/"> My Profile
+                    </Link>
+
+                    <Link className="dropdown-item" to="/">
+                      Order History
+                      
+                    </Link>
+                    <Link className="dropdown-item" to="/">
+                      Settings
+                    </Link>
+                    <Link className="dropdown-item" to="/">
+                      Log out
+                      
+                    </Link>
+                  </div>
+                </div>
+
+                </div>
+              </div>
+                {/* <div className="col-md-3 d-flex align-items-center justify-content-end Login-Register">
                   <div className ="right-position">
                 <div className="btn-group">
                   <button
@@ -154,7 +187,7 @@ const Header = () => {
                 </div>
 
                 </div>
-              </div>
+              </div> */}
     
               {/* <div className="col-md-3 d-flex align-items-center justify-content-end Login-Register">
                 <div className="btn-group">

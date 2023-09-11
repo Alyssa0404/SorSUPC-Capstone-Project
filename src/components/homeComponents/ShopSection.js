@@ -129,8 +129,8 @@ const ShopSection = ({ products }) => {
             <Carousel 
               showDots={false}
               dotListClass="custom-dot-list-style"
-              autoPlay={true}
-  autoPlaySpeed={1000}
+  //             autoPlay={true}
+  // autoPlaySpeed={1000}
             responsive={responsive}>
               {Products.map((product, index) => (
                 <div className="shop" key={product._id}>
